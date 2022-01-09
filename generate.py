@@ -274,7 +274,8 @@ class CrosswordCreator():
 
             if outcome is not None:
                 break # outcome is finished assignment
-
+            # there should be removal of assignet word if it not consistent
+            del assignment[var]
         return outcome
 
 
